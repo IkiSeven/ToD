@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Verdade ou consequência</title>
+    </head>
+    <body>        
+        <div class="container bg-gradient ">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-4">
+                    <form id="formMain">
+                        <div class="form-label"><h3><b>Adicionar Jogador</b></h3></div>
+                        <div class="mb-3">
+                        <label for="userName" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="userName" placeholder="Digite seu nome...">
+                        <div class="mb-3">
+                          <label for="userAge" class="form-label">Idade</label>
+                          <input type="number" class="form-control" id="userAge" placeholder="Digite sua idade...">
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Adicionar">
+                      </form>
+                </div>
+                <div class="offset-2 col-2">
+                    <div id="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="modal fade" id="modalGame">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGameTitle">Desafio:</h5>
+                  <button type="button" class="btn-close" id="modalGameClose"></button>
+                </div>
+                <div class="modal-body" id="modalGameShow">
+                  <p></p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn btn-outline-primary" id="gameButtonAgain">Jogar novamente</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="container position-static">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-6 mb-3 mt-3">
+                    <div id="gameShow">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center p-4">
+                <div class="col-1">
+                    <button type="submit" class="btn btn-outline-primary" id="gameButton">Jogar</button>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
